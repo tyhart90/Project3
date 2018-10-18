@@ -1,0 +1,26 @@
+/* ===========================
+     ~~~  BASE STYLES ~~~
+================================ */
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+/* ===========================
+    ~~~  MEDIA QUERIES ~~~
+================================ */
+
+@media (min-width: 768px) {
+
+}
