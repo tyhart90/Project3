@@ -18,9 +18,14 @@ header {
   background-color: #c0cde0;
   padding: 5px;
 }
+
+.contact {
+  border-top: solid black 3px;
+  width: 100%;
+  padding-top: 30px;
+}
 .wrapper {
   border-width: thick;
-  border-top: solid black 3px;
   border-bottom: solid black 3px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -38,14 +43,15 @@ h2 {
   width: 50%;
   font-family: 'Libre Franklin', sans-serif;
   border-bottom: solid black 7px;
-  border-width: 100%;
   padding-bottom: 20px;
   text-align: center;
   align-items: center;
   height: auto;
   margin: auto;
+  margin-bottom: 5px;
   outline: 0;
   padding: 15px;
+  padding-bottom: 30px;
   width: 93%;
 }
 
@@ -59,6 +65,10 @@ fieldset {
   margin-bottom: 30px;
 }
 
+input::placeholder {
+  text-align:  right;
+  font-style: italic;
+}
 
 input[type="text"],
 input[type="email"],
@@ -197,5 +207,5 @@ footer {
 ================================ */
 
 @media (min-width: 768px) {
-  font-color: red;
+  
 }
