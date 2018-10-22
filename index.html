@@ -13,72 +13,78 @@
   <h1>THE CODE REVIEW</h1>
 </header>
 
-<form>
-  <h2>Signup for our Newsletter</h2>
-  <p class="first">Get the latest news on how your code is doing right in your inbox</p>
+
+<div class="container">
+
+    <form>
+      <h2>Signup for our Newsletter</h2>
+      <p class="first">Get the latest news on how your code is doing right in your inbox</p>
 
 
-<fieldset>
-  <legend>Contact Information</legend>
+    <fieldset>
+      <div class="wrapper">
 
-  <label for="name">Full Name</label>
-  <input type="text" id="name" name="user_name" placeholder="Required" required>
+      <legend>Contact Information</legend>
 
-  <label for="mail">Email Address</label>
-  <input type="email" id="mail" name="user_email" placeholder="Required" required>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="user_name" placeholder="Required" required>
 
-  <label for="phone">Phone Number</label>
-  <input type="tel" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx">
+      <label for="mail">Email Address</label>
+      <input type="email" id="mail" name="user_email" placeholder="Required" required>
 
-  <label for="address">Street Adress</label>
-  <input type="text" id="address" name="user_address">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="user_phone" placeholder="xxx-xxx-xxxx">
 
-  <label for="city">City</label>
-  <input type="text" id="city" name="user_city">
+      <label for="address">Street Adress</label>
+      <input type="text" id="address" name="user_address">
 
-  <label for="state">State</label>
-  <select id="state" name="user_state">
-    <option disabled selected value= "Select State">Choose State</option>
-    <option value="az">Arizona</option>
-    <option value="ca">California</option>
-    <option value="co">Colorodo</option>
-    <option value="nv">Nevada</option>
-    <option value="nm">New Mexico</option>
-    <option value="ny">New York</option>
-    <option value="wa">Washington</option>
-  </select>
+      <label for="city">City</label>
+      <input type="text" id="city" name="user_city">
 
-  <label for="zip">Zip Code</label>
-  <input type="number" id="zip" name="user_zipcode">
+      <label for="state">State</label>
+      <select id="state" name="user_state">
+        <option disabled selected value= "Select State">Choose State</option>
+        <option value="az">Arizona</option>
+        <option value="ca">California</option>
+        <option value="co">Colorodo</option>
+        <option value="nv">Nevada</option>
+        <option value="nm">New Mexico</option>
+        <option value="ny">New York</option>
+        <option value="wa">Washington</option>
+      </select>
 
-</fieldset>
+      <label for="zip">Zip Code</label>
+      <input type="number" id="zip" name="user_zipcode">
 
-<fieldset>
-  <legend>Newsletter</legend>
-  <p>Select the newsletters you would like to recieve</p>
+    </div>
+    </fieldset>
 
-  <input type="checkbox" id="html" value="recieve_HTML" name="user_news"><label for="html">HTML News</label>
-  <input type="checkbox" id="css" value="recieve_CSS" name="user_news"><label for="css">CSS News</label>
-  <input type="checkbox" id="javascript" value="recieve_JavaScript" name="user_news"><label for="javascript">JavaScript News</label>
+    <fieldset>
+      <legend>Newsletter</legend>
+      <p>Select the newsletters you would like to recieve</p>
+<div class="choices">
+      <input type="checkbox" id="html" value="recieve_HTML" name="user_news"><label for="html">HTML News</label>
+      <input type="checkbox" id="css" value="recieve_CSS" name="user_news"><label for="css">CSS News</label>
+      <input type="checkbox" id="javascript" value="recieve_JavaScript" name="user_news"><label for="javascript">JavaScript News</label>
 
-  <p>Newsletter format</p>
+      <p>Newsletter format</p>
 
-  <input type="radio" id="HTML" value="HTML" name="option"><label for="HTML">HTML</label>
-  <input type="radio" id="plain_text" value="plain_text" name="option"><label for="plain_text">Plain Text</label>
+      <input type="radio" id="HTML" value="HTML" name="option"><label for="HTML">HTML</label>
+      <input type="radio" id="plain_text" value="plain_text" name="option"><label for="plain_text">Plain Text</label>
+</div>
+    <p>Other topics you'd like to hear about</p>
+    <textarea id="other_topics" name="other_topics" placeholder="Explain Here!"></textarea>
 
-<p>Other topics you'd like to hear about</p>
-<textarea id="other_topics" name="other_topics" placeholder="Explain Here!"></textarea>
+    </fieldset>
 
-</fieldset>
+    <button type="submit">Sign Up</button>
 
-<button type="submit">Sign Up</button>
+    </form>
 
-</form>
-
-<footer>
-  <p>Copyright The Code Review</p>
-</footer>
-
+    <footer>
+      <p>Copyright The Code Review</p>
+    </footer>
+</div>
 
 </body>
 </html>

@@ -3,12 +3,30 @@
 ================================ */
 * {
   box-sizing: border-box;
+
 }
 
 header {
   background-color: #2D3945;
   color: white;
+  padding: .1em 0;
+  font-size: 20px;
 }
+
+.container {
+  padding-top: 1em;
+  background-color: #c0cde0;
+  padding: 5px;
+}
+.wrapper {
+  border-width: thick;
+  border-top: solid black 3px;
+  border-bottom: solid black 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
 
 h1,
 h2 {
@@ -17,11 +35,18 @@ h2 {
 }
 
 .first {
+  width: 50%;
   font-family: 'Libre Franklin', sans-serif;
-  border-bottom: solid black 5px;
+  border-bottom: solid black 7px;
+  border-width: 100%;
   padding-bottom: 20px;
   text-align: center;
-
+  align-items: center;
+  height: auto;
+  margin: auto;
+  outline: 0;
+  padding: 15px;
+  width: 93%;
 }
 
 form {
@@ -37,12 +62,10 @@ fieldset {
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
-input[type="tel"],
-textarea,
-select {
+input[type="tel"] {
+  transition: all 1.0s ease;
   background: rgba(255,255,255,0.1);
-  border: none;
+  border-radius: 4%;
   font-size: 16px;
   height: auto;
   margin: 0;
@@ -50,27 +73,99 @@ select {
   padding: 15px;
   width: 100%;
   background-color: #e8eeef;
-  color: #8a97a0;
+  color: royalblue;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+textarea {
+  transition: all 1.0s ease;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4%;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: royalblue;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 0;
+}
+
+select {
+  background: rgba(255,255,255,0.1);
+  border-radius: 4%;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: royalblue;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  height: 53px;
+  border-radius: 4%;
+}
+
+input[type="number"] {
+  display: flex;
+  transition: all 1.0s ease;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4%;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 2px;
+  padding: 15px;
+  width: 45%;
+  background-color: #e8eeef;
+  color: royalblue;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
 }
 
 
 
-
-
-
-
 legend {
   font-weight: bold;
   font-size: 1.6em;
+  margin-bottom: 12px;
 }
 
 label {
   font-family: 'Libre Franklin', sans-serif;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+
 }
+
+input:focus,
+textarea:focus {
+  background-color: #d8aa75;
+  border: solid black 2px;
+  transition: all 1.0s ease;
+}
+
+.choices label {
+  padding-left: 40px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    display: inline-block;
+    float: left;
+    justify-content: space-between;
+
+}
+
+
+
 
 p {
   font-family: 'Libre Franklin', sans-serif;
@@ -81,21 +176,26 @@ button {
   background-color: #4EBBB5;
   padding: 19px 39px 18px 39px;
   font-family: 'Libre Franklin', sans-serif;
-  color: #FFF;
+  color: white;
   font-size: 22px;
   text-align: center;
   font-style: normal;
   width: 100%;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  margin-top: 0;
 }
 
+footer {
+  text-align: center;
+  padding-bottom: 10px;
 
+}
 
 /* ===========================
     ~~~  MEDIA QUERIES ~~~
 ================================ */
 
 @media (min-width: 768px) {
-
+  font-color: red;
 }
